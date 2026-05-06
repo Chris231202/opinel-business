@@ -1,0 +1,462 @@
+/* Services Page Styles - Extension du design principal */
+
+/* Hero Services */
+.services-hero {
+    min-height: 60vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 80px;
+    background: linear-gradient(135deg, #ffffff 0%, #f8f8f8 100%);
+    position: relative;
+    overflow: hidden;
+}
+
+.services-hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><defs><pattern id="grid" width="10" height="10" patternUnits="userSpaceOnUse"><path d="M 10 0 L 0 0 0 10" fill="none" stroke="%23000000" stroke-width="0.1" opacity="0.1"/></pattern></defs><rect width="100" height="100" fill="url(%23grid)"/></svg>');
+    opacity: 0.3;
+}
+
+.services-hero__content {
+    text-align: center;
+    position: relative;
+    z-index: 2;
+}
+
+/* Services Détaillés */
+.services-detailed {
+    padding: 6rem 0;
+    background: var(--secondary-color);
+}
+
+.service-detail {
+    display: grid;
+    grid-template-columns: 1fr 1.5fr;
+    gap: 4rem;
+    align-items: center;
+    margin-bottom: 6rem;
+    padding: 3rem 0;
+    position: relative;
+}
+
+.service-detail::after {
+    content: '';
+    position: absolute;
+    bottom: -3rem;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100px;
+    height: 2px;
+    background: linear-gradient(90deg, transparent, var(--primary-color), transparent);
+}
+
+.service-detail:last-child::after {
+    display: none;
+}
+
+.service-detail.reverse {
+    grid-template-columns: 1.5fr 1fr;
+}
+
+.service-detail.reverse .service-detail__image {
+    order: 2;
+}
+
+.service-detail.reverse .service-detail__content {
+    order: 1;
+}
+
+.service-detail__image {
+    position: relative;
+    height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.service-detail__icon {
+    width: 200px;
+    height: 200px;
+    background: linear-gradient(135deg, var(--primary-color) 0%, var(--accent-color) 100%);
+    border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 4rem;
+    color: var(--text-white);
+    box-shadow: var(--shadow-hover);
+    animation: morphService 8s ease-in-out infinite;
+    transition: var(--transition);
+}
+
+@keyframes morphService {
+    0%, 100% {
+        border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
+        transform: rotate(0deg);
+    }
+    25% {
+        border-radius: 70% 30% 30% 70% / 70% 70% 30% 30%;
+        transform: rotate(90deg);
+    }
+    50% {
+        border-radius: 50% 50% 50% 50% / 50% 50% 50% 50%;
+        transform: rotate(180deg);
+    }
+    75% {
+        border-radius: 30% 70% 70% 30% / 70% 30% 30% 70%;
+        transform: rotate(270deg);
+    }
+}
+
+.service-detail__content {
+    position: relative;
+}
+
+.service-detail__number {
+    position: absolute;
+    top: -2rem;
+    left: 0;
+    font-size: 8rem;
+    font-weight: 800;
+    color: rgba(0, 0, 0, 0.05);
+    line-height: 1;
+    z-index: -1;
+}
+
+.service-detail__title {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: var(--primary-color);
+    margin-bottom: 1.5rem;
+    position: relative;
+}
+
+.service-detail__title::after {
+    content: '';
+    position: absolute;
+    bottom: -0.5rem;
+    left: 0;
+    width: 60px;
+    height: 3px;
+    background: var(--primary-color);
+}
+
+.service-detail__description {
+    font-size: 1.1rem;
+    color: var(--text-light);
+    line-height: 1.8;
+    margin-bottom: 2rem;
+}
+
+.service-detail__features {
+    list-style: none;
+    margin-bottom: 2.5rem;
+}
+
+.service-detail__features li {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 1rem;
+    font-weight: 500;
+    color: var(--text-dark);
+}
+
+.service-detail__features i {
+    width: 20px;
+    height: 20px;
+    background: var(--primary-color);
+    color: var(--text-white);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.8rem;
+    flex-shrink: 0;
+}
+
+.service-detail__pricing {
+    display: flex;
+    align-items: baseline;
+    gap: 0.5rem;
+    margin-bottom: 2rem;
+}
+
+.price-label {
+    font-size: 0.9rem;
+    color: var(--text-light);
+    font-weight: 500;
+}
+
+.price-value {
+    font-size: 2.5rem;
+    font-weight: 800;
+    color: var(--primary-color);
+}
+
+.price-period {
+    font-size: 1rem;
+    color: var(--text-light);
+    font-weight: 500;
+}
+
+/* Pourquoi nous choisir */
+.why-choose {
+    padding: 6rem 0;
+    background: var(--bg-light);
+}
+
+.why-choose__grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+}
+
+.why-card {
+    background: var(--secondary-color);
+    padding: 2.5rem;
+    border-radius: 20px;
+    box-shadow: var(--shadow);
+    text-align: center;
+    transition: var(--transition);
+    position: relative;
+    overflow: hidden;
+}
+
+.why-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 4px;
+    background: linear-gradient(90deg, var(--primary-color) 0%, var(--accent-color) 100%);
+    transform: scaleX(0);
+    transition: var(--transition);
+}
+
+.why-card:hover {
+    transform: translateY(-10px);
+    box-shadow: var(--shadow-hover);
+}
+
+.why-card:hover::before {
+    transform: scaleX(1);
+}
+
+.why-card__icon {
+    width: 80px;
+    height: 80px;
+    background: linear-gradient(135deg, var(--primary-color) 0%, var(--accent-color) 100%);
+    color: var(--text-white);
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2rem;
+    margin: 0 auto 1.5rem;
+    transition: var(--transition);
+}
+
+.why-card:hover .why-card__icon {
+    transform: rotateY(360deg);
+}
+
+.why-card__title {
+    font-size: 1.3rem;
+    font-weight: 600;
+    color: var(--primary-color);
+    margin-bottom: 1rem;
+}
+
+.why-card__description {
+    color: var(--text-light);
+    line-height: 1.6;
+}
+
+/* CTA Section */
+.cta-section {
+    padding: 6rem 0;
+    background: var(--primary-color);
+    color: var(--text-white);
+    text-align: center;
+}
+
+.cta-content {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.cta-title {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 1.5rem;
+}
+
+.cta-description {
+    font-size: 1.1rem;
+    opacity: 0.9;
+    margin-bottom: 2.5rem;
+    line-height: 1.7;
+}
+
+.cta-buttons {
+    display: flex;
+    gap: 1.5rem;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.btn-large {
+    padding: 1.2rem 3rem;
+    font-size: 1rem;
+}
+
+/* Animations d'apparition */
+.service-detail {
+    opacity: 0;
+    transform: translateY(50px);
+    animation: fadeInUp 0.8s ease forwards;
+}
+
+.service-detail:nth-child(2) {
+    animation-delay: 0.2s;
+}
+
+.service-detail:nth-child(3) {
+    animation-delay: 0.4s;
+}
+
+.service-detail:nth-child(4) {
+    animation-delay: 0.6s;
+}
+
+@keyframes fadeInUp {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Responsive Design */
+@media screen and (max-width: 968px) {
+    .services-hero {
+        min-height: 50vh;
+        padding-top: 100px;
+    }
+
+    .service-detail,
+    .service-detail.reverse {
+        grid-template-columns: 1fr;
+        gap: 3rem;
+        margin-bottom: 4rem;
+    }
+
+    .service-detail.reverse .service-detail__image,
+    .service-detail.reverse .service-detail__content {
+        order: initial;
+    }
+
+    .service-detail__image {
+        height: 300px;
+    }
+
+    .service-detail__icon {
+        width: 150px;
+        height: 150px;
+        font-size: 3rem;
+    }
+
+    .service-detail__title {
+        font-size: 2rem;
+    }
+
+    .service-detail__number {
+        font-size: 6rem;
+        top: -1.5rem;
+    }
+
+    .why-choose__grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .cta-title {
+        font-size: 2rem;
+    }
+
+    .cta-buttons {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .btn-large {
+        width: 100%;
+        max-width: 300px;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .services-hero__content .hero__title {
+        font-size: 2.5rem;
+    }
+
+    .service-detail__title {
+        font-size: 1.8rem;
+    }
+
+    .service-detail__number {
+        font-size: 4rem;
+        top: -1rem;
+    }
+
+    .service-detail__icon {
+        width: 120px;
+        height: 120px;
+        font-size: 2.5rem;
+    }
+
+    .why-choose__grid {
+        grid-template-columns: 1fr;
+    }
+
+    .price-value {
+        font-size: 2rem;
+    }
+
+    .cta-title {
+        font-size: 1.8rem;
+    }
+}
+
+/* Effets de hover supplémentaires */
+.service-detail:hover .service-detail__icon {
+    transform: scale(1.1);
+    box-shadow: 0 25px 80px rgba(0, 0, 0, 0.3);
+}
+
+.service-detail__features li:hover {
+    transform: translateX(10px);
+    transition: var(--transition);
+}
+
+.service-detail__features li:hover i {
+    transform: scale(1.2);
+}
+
+/* Animation de scroll pour les éléments */
+.animate-on-scroll {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: all 0.6s ease;
+}
+
+.animate-on-scroll.animated {
+    opacity: 1;
+    transform: translateY(0);
+}
