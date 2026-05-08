@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Car Wash - Opinel Business</title>
+    <link rel="stylesheet" href="accueil.css">
+    <link rel="stylesheet" href="Carwash.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header" id="header">
+        <nav class="nav container">
+            <a href="index.html" class="nav__logo">
+                <span class="logo-text">OPINEL</span>
+                <span class="logo-sub">BUSINESS</span>
+            </a>
+            
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list">
+                    <li class="nav__item"><a href="index.html" class="nav__link">Accueil</a></li>
+                    <li class="nav__item"><a href="services.html" class="nav__link">Services</a></li>
+                    <li class="nav__item"><a href="about.html" class="nav__link">À propos</a></li>
+                    <li class="nav__item"><a href="index.html#stats" class="nav__link">Chiffres</a></li>
+                    <li class="nav__item"><a href="index.html#contact" class="nav__link">Contact</a></li>
+                </ul>
+                <div class="nav__close" id="nav-close">
+                    <i class="fas fa-times"></i>
+                </div>
+            </div>
+
+            <div class="nav__toggle" id="nav-toggle">
+                <i class="fas fa-bars"></i>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Carwash -->
+    <section class="carwash-hero">
+        <div class="carwash-hero__content">
+            <i class="fas fa-car-wash carwash-hero__icon"></i>
+            <span class="hero__subtitle animate-fade">Service Premium</span>
+            <h1 class="hero__title animate-slide-up">
+                Car Wash <span class="gradient-text">Professionnel</span>
+            </h1>
+            <p class="hero__description animate-fade-delay">
+                Offrez à votre véhicule le traitement exceptionnel qu'il mérite avec nos services de lavage automobile de haute qualité
+            </p>
+        </div>
+    </section>
+
+    <!-- Services Détaillés -->
+    <section class="carwash-services">
+        <div class="container">
+            <div class="section__header">
+                <span class="section__subtitle">Nos Services</span>
+                <h2 class="section__title">Lavage Auto Premium</h2>
+            </div>
+
+            <!-- Service 1 -->
+            <div class="service-detail">
+                <div class="service-detail__image">
+                    <div class="service-detail__icon">
+                        <i class="fas fa-soap"></i>
+                    </div>
+                </div>
+                <div class="service-detail__content">
+                    <span class="service-detail__number">01</span>
+                    <h3 class="service-detail__title">Lavage Extérieur</h3>
+                    <p class="service-detail__description">
+                        Nettoyage complet de la carrosserie avec des produits professionnels qui protègent la peinture de votre véhicule. Notre technique de lavage à la main garantit un résultat impeccable sans rayures.
+                    </p>
+                    <ul class="service-detail__features">
+                        <li><i class="fas fa-check"></i> Lavage carrosserie à la main</li>
+                        <li><i class="fas fa-check"></i> Nettoyage jantes et pneus</li>
+                        <li><i class="fas fa-check"></i> Traitement protecteur</li>
+                        <li><i class="fas fa-check"></i> Séchage microfibre</li>
+                    </ul>
+                    <div class="service-detail__pricing">
+                        <span class="price-label">À partir de</span>
+                        <span class="price-value">$7.5</span>
+                        <span class="price-period">/ véhicule</span>
+                    </div>
+                    <a href="#contact" class="btn btn-primary">
+                        Réserver <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Service 2 -->
+            <div class="service-detail reverse">
+                <div class="service-detail__image">
+                    <div class="service-detail__icon">
+                        <i class="fas fa-couch"></i>
+                    </div>
+                </div>
+                <div class="service-detail__content">
+                    <span class="service-detail__number">02</span>
+                    <h3 class="service-detail__title">Lavage Intérieur</h3>
+                    <p class="service-detail__description">
+                        Aspiration complète, nettoyage des sièges, tableau de bord et toutes les surfaces intérieures. Nous utilisons des produits spécifiques pour chaque type de matériau (cuir, tissu, plastique).
+                    </p>
+                    <ul class="service-detail__features">
+                        <li><i class="fas fa-check"></i> Aspiration complète</li>
+                        <li><i class="fas fa-check"></i> Nettoyage sièges et tapis</li>
+                        <li><i class="fas fa-check"></i> Traitement des plastiques</li>
+                        <li><i class="fas fa-check"></i> Parfum d'ambiance</li>
+                    </ul>
+                    <div class="service-detail__pricing">
+                        <span class="price-label">À partir de</span>
+                        <span class="price-value">$7.5</span>
+                        <span class="price-period">/ véhicule</span>
+                    </div>
+                    <a href="#contact" class="btn btn-primary">
+                        Réserver <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Service 3 -->
+            <div class="service-detail">
+                <div class="service-detail__image">
+                    <div class="service-detail__icon">
+                        <i class="fas fa-gem"></i>
+                    </div>
+                </div>
+                <div class="service-detail__content">
+                    <span class="service-detail__number">03</span>
+                    <h3 class="service-detail__title">Formule Complète</h3>
+                    <p class="service-detail__description">
+                        La solution tout-en-un pour un véhicule comme neuf. Combinaison du lavage extérieur et intérieur avec des services additionnels pour une propreté parfaite de la caisse au coffre.
+                    </p>
+                    <ul class="service-detail__features">
+                        <li><i class="fas fa-check"></i> Lavage extérieur complet</li>
+                        <li><i class="fas fa-check"></i> Nettoyage intérieur approfondi</li>
+                        <li><i class="fas fa-check"></i> Lustrage carrosserie</li>
+                        <li><i class="fas fa-check"></i> Nettoyage vitres</li>
+                    </ul>
+                    <div class="service-detail__pricing">
+                        <span class="price-label">À partir de</span>
+                        <span class="price-value">$15</span>
+                        <span class="price-period">/ véhicule</span>
+                    </div>
+                    <a href="#contact" class="btn btn-primary">
+                        Réserver <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Packages -->
+    <section class="packages-section">
+        <div class="container">
+            <div class="section__header">
+                <span class="section__subtitle">Nos Offres</span>
+                <h2 class="section__title">Forfaits Car Wash</h2>
+            </div>
+
+            <div class="packages-grid">
+                <!-- Package Basic -->
+                <div class="package-card" style="background-image: linear-gradient(135deg, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0.6) 100%), url('images/CW\(26\).jpeg'); background-size: cover; background-position: center;">
+                    <div class="package-icon">
+                        <i class="fas fa-car"></i>
+                    </div>
+                    <h3 class="package-name">Basic</h3>
+                    <div class="package-price">$50</div>
+                    <div class="package-period">/ mois - 3 lavages</div>
+                    <ul class="package-features">
+                        <li><i class="fas fa-check-circle"></i> 3 lavages extérieurs</li>
+                        <li><i class="fas fa-check-circle"></i> Séchage microfibre</li>
+                        <li><i class="fas fa-check-circle"></i> Nettoyage jantes</li>
+                        <li><i class="fas fa-check-circle"></i> Valable 30 jours</li>
+                    </ul>
+                    <a href="#contact" class="btn btn-secondary btn-full">
+                        Choisir ce forfait
+                    </a>
+                </div>
+
+                <!-- Package Premium -->
+                <div class="package-card featured" style="background-image: linear-gradient(135deg, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0.6) 100%), url('images/CW\(22\).jpeg'); background-size: cover; background-position: center;">
+                    <span class="package-badge">Populaire</span>
+                    <div class="package-icon">
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h3 class="package-name">Premium</h3>
+                    <div class="package-price">$100</div>
+                    <div class="package-period">/ mois - 6 lavages</div>
+                    <ul class="package-features">
+                        <li><i class="fas fa-check-circle"></i> 6 lavages complets</li>
+                        <li><i class="fas fa-check-circle"></i> Extérieur + Intérieur</li>
+                        <li><i class="fas fa-check-circle"></i> Traitement protecteur</li>
+                        <li><i class="fas fa-check-circle"></i> Priorité réservation</li>
+                        <li><i class="fas fa-check-circle"></i> Valable 30 jours</li>
+                    </ul>
+                    <a href="#contact" class="btn btn-primary btn-full">
+                        Choisir ce forfait
+                    </a>
+                </div>
+
+                <!-- Package Enterprise -->
+                <div class="package-card" style="background-image: linear-gradient(135deg, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0.6) 100%), url('images/CW\(8\).jpeg'); background-size: cover; background-position: center;">
+                    <div class="package-icon">
+                        <i class="fas fa-building"></i>
+                    </div>
+                    <h3 class="package-name">Entreprise</h3>
+                    <div class="package-price">Sur devis</div>
+                    <div class="package-period">Flottes de véhicules</div>
+                    <ul class="package-features">
+                        <li><i class="fas fa-check-circle"></i> Lavages illimités</li>
+                        <li><i class="fas fa-check-circle"></i> Service à domicile</li>
+                        <li><i class="fas fa-check-circle"></i> Facturation mensuelle</li>
+                        <li><i class="fas fa-check-circle"></i> Rapport d'activité</li>
+                    </ul>
+                    <a href="#contact" class="btn btn-secondary btn-full">
+                        Nous contacter
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Choose Us -->
+    <section class="why-choose">
+        <div class="container">
+            <div class="section__header">
+                <span class="section__subtitle">Pourquoi nous choisir</span>
+                <h2 class="section__title">L'Excellence Opinel</h2>
+            </div>
+
+            <div class="why-choose__grid">
+                <div class="why-card">
+                    <div class="why-card__icon">
+                        <i class="fas fa-medal"></i>
+                    </div>
+                    <h3 class="why-card__title">Qualité Premium</h3>
+                    <p class="why-card__description">
+                        Nous utilisons exclusivement des produits de haute qualité qui respectent votre véhicule et assurent un résultat durable.
+                    </p>
+                </div>
+
+                <div class="why-card">
+                    <div class="why-card__icon">
+                        <i class="fas fa-user-tie"></i>
+                    </div>
+                    <h3 class="why-card__title">Équipe Experte</h3>
+                    <p class="why-card__description">
+                        Nos techniciens sont formés et expérimentés pour traiter tous types de véhicules avec le plus grand soin.
+                    </p>
+                </div>
+
+                <div class="why-card">
+                    <div class="why-card__icon">
+                        <i class="fas fa-clock"></i>
+                    </div>
+                    <h3 class="why-card__title">Service Rapide</h3>
+                    <p class="why-card__description">
+                        Nous optimisons chaque étape pour vous offrir un service efficace sans compromettre la qualité.
+                    </p>
+                </div>
+
+                <div class="why-card">
+                    <div class="why-card__icon">
+                        <i class="fas fa-leaf"></i>
+                    </div>
+                    <h3 class="why-card__title">Écologique</h3>
+                    <p class="why-card__description">
+                        Nos produits sont biodégradables et notre processus de lavage minimise la consommation d'eau.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section" id="contact">
+        <div class="container">
+            <div class="cta-content">
+                <h2 class="cta-title">Prêt pour un véhicule impeccable ?</h2>
+                <p class="cta-description">
+                    Réservez dès maintenant votre service de car wash et découvrez l'excellence Opinel Business
+                </p>
+                <div class="cta-buttons">
+                    <a href="tel:+243980002003" class="btn btn-primary btn-large">
+                        <i class="fas fa-phone"></i> +243 98 000 2003
+                    </a>
+                    <a href="mailto:ciunzachristian@gmail.com" class="btn btn-secondary btn-large">
+                        <i class="fas fa-envelope"></i> Nous écrire
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__container">
+                <div class="footer__brand">
+                    <h3 class="footer__logo">
+                        <span>OPINEL</span>
+                        <span>BUSINESS</span>
+                    </h3>
+                    <p class="footer__description">
+                        L'excellence au service de votre réussite
+                    </p>
+                    <div class="footer__social">
+                        <a href="#" class="social__link"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="social__link"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="social__link"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="social__link"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+
+                <div class="footer__links">
+                    <div class="footer__column">
+                        <h4 class="footer__title">Services</h4>
+                        <ul class="footer__list">
+                            <li><a href="Carwash.html">Car Wash</a></li>
+                            <li><a href="Rbnb.html">Location Airbnb</a></li>
+                            <li><a href="services.html">Services Premium</a></li>
+                            <li><a href="portail.html">Portail Client</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="footer__column">
+                        <h4 class="footer__title">Entreprise</h4>
+                        <ul class="footer__list">
+                            <li><a href="about.html">À propos</a></li>
+                            <li><a href="index.html#stats">Nos chiffres</a></li>
+                            <li><a href="index.html#contact">Contact</a></li>
+                            <li><a href="#">Carrières</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="footer__column">
+                        <h4 class="footer__title">Légal</h4>
+                        <ul class="footer__list">
+                            <li><a href="#">Mentions légales</a></li>
+                            <li><a href="#">Confidentialité</a></li>
+                            <li><a href="#">CGU</a></li>
+                            <li><a href="#">Cookies</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer__bottom">
+                <p>&copy; 2024 Opinel Business. Tous droits réservés.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="accueil.js"></script>
+</body>
+</html>
